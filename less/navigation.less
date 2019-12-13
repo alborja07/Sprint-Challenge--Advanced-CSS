@@ -1,15 +1,23 @@
 // Navigation code here
+@import 'variables';
+
+.navstyles (@nav-bg, @nav-font, @nav-border) {
+    background-color: @nav-bg;
+    color: @nav-font;
+    border: 1px @nav-border;
+}
 
 nav {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
     justify-content: space-around;
-    // margin: 1.5% 25%;
-    color: #22283b;
-    background: #f4f4f4;
+    // color: #22;
+    // background: #f4f4f4;
     padding: 20px 0;
     // border: 1px double #e0e0e0;
+
+    .navstyles(@wild-sand, @river-bend, @sea-shell);
 
     h1 {
         font-size: 4rem;

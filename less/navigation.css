@@ -3,9 +3,10 @@ nav {
   flex-wrap: wrap;
   width: 100%;
   justify-content: space-around;
-  color: #22283b;
-  background: #f4f4f4;
   padding: 20px 0;
+  background-color: #F6F6F6;
+  color: #454A59;
+  border: 1px #F1F1F1;
 }
 nav h1 {
   font-size: 4rem;

@@ -177,9 +177,10 @@ nav {
   flex-wrap: wrap;
   width: 100%;
   justify-content: space-around;
-  color: #22283b;
-  background: #f4f4f4;
   padding: 20px 0;
+  background-color: #F6F6F6;
+  color: #454A59;
+  border: 1px #F1F1F1;
 }
 nav h1 {
   font-size: 4rem;
@@ -198,8 +199,8 @@ a {
   font-size: 1.6rem;
 }
 footer {
-  color: #22283b;
-  background: #f4f4f4;
+  color: black;
+  background: #F6F6F6;
   padding: 20px 0;
   border: 1px double #e0e0e0;
   border-radius: 10px;
@@ -207,6 +208,14 @@ footer {
   justify-content: center;
   align-items: center;
   margin-bottom: 5%;
+}
+.home h1,
+.home h2,
+.home h3 {
+  color: #23293B;
+}
+.home body {
+  color: main-font-color;
 }
 .home .intro h2 {
   padding: 15px;
