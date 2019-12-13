@@ -1,0 +1,12 @@
+.btn {
+  display: block;
+  background-color: #23293B;
+  width: 100px;
+  font-size: 2rem;
+  color: #F6F7F8;
+  border-radius: 5px;
+  height: 38px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}

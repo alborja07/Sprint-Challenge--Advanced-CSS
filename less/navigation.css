@@ -1,0 +1,17 @@
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%;
+  justify-content: space-around;
+  margin: 1.5% 25%;
+}
+nav h1 {
+  font-size: 3.6rem;
+  flex-basis: 100%;
+  text-align: center;
+  padding-bottom: 3%;
+}
+nav a {
+  text-decoration: none;
+  font-size: 1.6rem;
+}

@@ -1,1 +1,19 @@
 // Mixins Here
+@import 'variables';
+
+.btn-styles (@button-bg, @button-font) {
+    display: block;
+    background-color: @button-bg;
+    width: 100px;
+    font-size: 2rem;
+    color: @button-font;
+    border-radius: 5px;
+    height: 38px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.btn {
+    .btn-styles(@ebony-clay, @porcelain);
+}
