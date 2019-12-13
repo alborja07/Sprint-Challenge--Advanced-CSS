@@ -4,7 +4,7 @@
 .btn-styles (@button-bg, @button-font) {
     display: block;
     background-color: @button-bg;
-    width: 100px;
+    width: 50%;
     font-size: 2rem;
     color: @button-font;
     border-radius: 5px;
@@ -12,8 +12,9 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-}
 
-.btn {
-    .btn-styles(@ebony-clay, @porcelain);
+    &:hover {
+        background-color: @button-font;
+        color: @button-bg;
+    }
 }

@@ -1,15 +1,3 @@
-.btn {
-  display: block;
-  background-color: #23293B;
-  width: 100px;
-  font-size: 2rem;
-  color: #F6F7F8;
-  border-radius: 5px;
-  height: 38px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -147,7 +135,7 @@ html {
 html,
 body {
   font-family: 'Ubuntu', sans-serif;
-  color: #5E6164;
+  color: #5e6164;
 }
 h1,
 h2,
@@ -155,7 +143,7 @@ h3,
 h4,
 h5 {
   font-family: 'Russo One', sans-serif;
-  color: #23293B;
+  color: #23293b;
 }
 h2 {
   font-size: 3.2rem;
@@ -178,9 +166,9 @@ nav {
   width: 100%;
   justify-content: space-around;
   padding: 20px 0;
-  background-color: #F6F6F6;
-  color: #454A59;
-  border: 1px #F1F1F1;
+  background-color: #f6f6f6;
+  color: #454a59;
+  border: 1px #f1f1f1;
 }
 nav h1 {
   font-size: 4rem;
@@ -194,13 +182,18 @@ nav div {
   justify-content: space-around;
   width: 45%;
 }
-a {
+nav a {
   text-decoration: none;
   font-size: 1.6rem;
 }
+@media (max-width: 500px) {
+  nav div {
+    width: 100%;
+  }
+}
 footer {
   color: black;
-  background: #F6F6F6;
+  background: #f6f6f6;
   padding: 20px 0;
   border: 1px double #e0e0e0;
   border-radius: 10px;
@@ -212,7 +205,7 @@ footer {
 .home h1,
 .home h2,
 .home h3 {
-  color: #23293B;
+  color: #23293b;
 }
 .home body {
   color: main-font-color;
@@ -233,6 +226,17 @@ footer {
   margin: 20px 2.5%;
   border-radius: 20px;
   height: 100%;
+}
+@media (max-width: 500px) {
+  .home .space-images .blast {
+    width: 100%;
+  }
+  .home .space-images .sky {
+    display: none;
+  }
+  .home .space-images .launch {
+    display: none;
+  }
 }
 .home .visit-planets {
   padding: 15px;
@@ -259,6 +263,22 @@ footer {
 .home .walk .walk-text p {
   margin-bottom: 26px;
 }
+.home .walk .walk-text .btn {
+  display: block;
+  background-color: #23293b;
+  width: 50%;
+  font-size: 2rem;
+  color: #f6f7f8;
+  border-radius: 5px;
+  height: 38px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.home .walk .walk-text .btn:hover {
+  background-color: #f6f7f8;
+  color: #23293b;
+}
 .home .walk .walk-img {
   width: 46%;
   margin-left: 4%;
@@ -267,4 +287,24 @@ footer {
   width: 100%;
   height: auto;
   border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .home .walk {
+    display: flex;
+    flex-direction: column;
+    padding: 1%;
+  }
+  .home .walk .walk-text {
+    width: 100%;
+  }
+  .home .walk h3 {
+    margin-top: 3%;
+  }
+  .home .walk .walk-img {
+    order: -2;
+    width: 100%;
+  }
+  .home .walk .btn {
+    width: 100%;
+  }
 }
